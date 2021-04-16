@@ -249,3 +249,24 @@ footer {
     line-height: 25px;
     color: #878786;
 }
+
+
+.privacy {
+    background: white;
+    height: 800px;
+}
+
+.privacy-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-top: 30px;
+}
+
+.privacy-title {
+    font-size: 53px;
+    line-height: 55px;
+}
+.privacy-text {
+    font-size: 16px;
+}
