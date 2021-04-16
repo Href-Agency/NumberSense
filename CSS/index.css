@@ -110,6 +110,7 @@ p {
 
 #laptop-image {
 padding-top: 50px;
+width: 100%;
 }
 
 .pdf-section {
@@ -214,4 +215,32 @@ padding-top: 50px;
     font-size: 16px;
     line-height: 27px;
     color: white;
+}
+.footer-image{
+    margin-top: -240px;
+    width: 100%;
+}
+footer {
+   height: 125px;
+   background: white;
+}
+
+.footer-left,.footer-right {
+    margin-top: auto;
+    margin-bottom: auto;
+    display:block;
+    padding: 25px;
+}
+
+.footer-text { 
+    font-size: 14px;
+    line-height: 25px;
+    color: #878786;
+}
+
+#footer-link {
+    padding-left: 25px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #878786;
 }
