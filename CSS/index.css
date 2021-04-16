@@ -13,7 +13,9 @@ body {
 .flex-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+
 }
 
 @media (max-width: 768px) {
@@ -64,34 +66,10 @@ height: 64px;
     color: #00234A;
     cursor: pointer;
     font-weight: 700;
-    width: 222px;
 } 
-
-#sample-button {
-    width: 117px;
-}
-
-#sample-button:hover {
-    width: 117px;
-}
-#shop-button {
-    width: 44px;
-}
-
-#shop-button:hover {
-    width: 44px;
-}
-#contact-button {
-    width: 67px;
-}
-
-#contact-button:hover {
-    width: 67px;
-}
 
 .button:hover {
         height: 64px;
-        width: 222px;
         opacity: 0.33;
         background-color: #FFFFFF;
 }
