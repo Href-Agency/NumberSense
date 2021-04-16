@@ -14,6 +14,7 @@ body {
     display: flex;
     flex-direction: row;
     max-height: 100%;
+    justify-content: space-between;
 }
 
 @media (max-width: 768px) {
@@ -64,10 +65,14 @@ height: 64px;
     color: #00234A;
     cursor: pointer;
     font-weight: 700;
+    width: 222px;
 } 
 
 .button:hover {
-    background-color: #ffffff;
+        height: 64px;
+        width: 222px;
+        opacity: 0.33;
+        background-color: #FFFFFF;
 }
 
 
@@ -162,4 +167,51 @@ padding-top: 50px;
     display: block;
     margin: auto;
     font-size: 20px;
+}
+
+.three-col-section {
+    background: #3893C7;
+    height: 1030px;
+    margin-top: -40px;
+}
+
+.three-col {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.three-col-title {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    padding-top: 66px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.column {
+    width: 294px;
+    height: 379px;
+    border: 1px solid white;
+}
+
+.col-number {
+    font-size: 90px;
+    line-height: 110px;
+    text-align:center;
+    margin: 28px;
+    color: white;
+}
+.col-text {
+    font-size: 16px;
+    line-height: 27px;
+    color: white;
+    padding: 0px 15px 0px 15px;
+}
+.col-bottom-text {
+    padding-top: 32px;
+    font-size: 16px;
+    line-height: 27px;
+    color: white;
 }
