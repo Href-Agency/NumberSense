@@ -167,6 +167,7 @@ width: 100%;
     display: block;
     margin: auto;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .three-col-section {
@@ -270,4 +271,21 @@ footer {
 }
 .privacy-text {
     font-size: 16px;
+}
+
+.covid-banner {
+    position: fixed;
+    bottom: 0;
+    background: #143595;
+    width: 100%;
+}
+
+.banner-text {
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+}
+#banner-link {
+    color: #2db44a;
 }
