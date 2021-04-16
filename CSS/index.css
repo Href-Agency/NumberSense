@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: Lato;
 }
 
 .header-block {
@@ -12,6 +13,7 @@ body {
 .flex-container {
     display: flex;
     flex-direction: row;
+    max-height: 100%;
 }
 
 @media (max-width: 768px) {
@@ -61,6 +63,7 @@ height: 64px;
     line-height: 23px;
     color: #00234A;
     cursor: pointer;
+    font-weight: 700;
 } 
 
 .button:hover {
@@ -74,7 +77,7 @@ height: 64px;
     height: 568px;
 }
 .fifty-block {
-    width: 90%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -86,6 +89,7 @@ h2 {
     font-size: 53px;
     line-height: 55px;
     color: #002449;
+    font-weight: 900;
 }
 
 p {
@@ -101,4 +105,61 @@ p {
 
 #laptop-image {
 padding-top: 50px;
+}
+
+.pdf-section {
+    background: #002449;
+    height: 797px;
+}
+
+.pdf-block {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pdf-left {
+    flex-basis: 50%;
+}
+
+#covers-image {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+}
+
+.pdf-right {
+    flex-basis: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.pdf-title {
+    color: white;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.pdf-text {
+    color: white;
+}
+
+.pdf-download {
+    height: 43px;
+    width: 191px;
+    box-shadow: rgba(0,0,0,0.5);
+    background: #99CC59;
+    border-radius: 35px;
+    font-size: 20px;
+    line-height: 40px;
+    color: #00234a;
+    margin-top: 30px;
+
+}
+
+.download-text {
+    display: block;
+    margin: auto;
+    font-size: 20px;
 }
