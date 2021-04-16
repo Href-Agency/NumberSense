@@ -238,13 +238,14 @@ width: 100%;
     color: white;
 }
 .footer-image-div{
-    margin-top: -240px;
+    margin-top: -200px;
     width: 100%;
 
 }
 
-.footer-image {
-    object-fit: fit;
+#footer-image {
+    object-fit: cover;
+
 }
 footer {
    height: 125px;
