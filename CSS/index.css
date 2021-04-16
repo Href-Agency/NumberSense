@@ -66,3 +66,39 @@ height: 64px;
 .button:hover {
     background-color: #ffffff;
 }
+
+
+.fifty-section {
+
+    background: white;
+    height: 568px;
+}
+.fifty-block {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fifty-left {
+    flex-basis: 50%;
+}
+
+h2 {
+    font-size: 53px;
+    line-height: 55px;
+    color: #002449;
+}
+
+p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #002449;
+}
+
+.fifty-right {
+    flex-basis: 50%;
+    margin-right: auto;
+}
+
+#laptop-image {
+padding-top: 50px;
+}
