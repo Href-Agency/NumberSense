@@ -14,7 +14,6 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
 
 }
 
@@ -22,6 +21,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: -2px;
 }
 
 .Logo_brombacherHeaderLogo {
@@ -72,6 +72,7 @@ height: 64px;
         height: 64px;
         opacity: 0.33;
         background-color: #FFFFFF;
+        color: #00234A;
 }
 
 
@@ -83,9 +84,12 @@ height: 64px;
 
 .fifty-block {
     width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+
 }
+
 .fifty-left {
     flex-basis: 50%;
 }
@@ -95,12 +99,15 @@ h2 {
     line-height: 55px;
     color: #002449;
     font-weight: 900;
+    margin-top: 0;
 }
 
 .fifty-text {
     font-size: 18px;
     line-height: 30px;
     color: #002449;
+    font-weight: 600;
+    width: 80%;
 }
 
 .fifty-right {
@@ -113,7 +120,7 @@ h2 {
     display: block;
     height: 500px;
     width: 800px;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 #laptop-image {
@@ -137,7 +144,7 @@ width: 381px;
 }
 
 .pdf-block {
-    width: 90%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -149,24 +156,28 @@ width: 381px;
 #covers-image {
     margin: auto;
     display: block;
+    height: 752px;
+    width: 629px;
 }
 
 
 .pdf-right {
     flex-basis: 50%;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 43px;
+
 }
 
 .pdf-title {
     color: white;
     font-size: 30px;
     line-height: 40px;
-    font-weight: 700;
+    font-weight: 600;
+    padding-bottom: 18px;
 }
 
 .pdf-text {
     color: white;
+
 }
 
 .pdf-download {
@@ -184,20 +195,22 @@ width: 381px;
 
 .download-text {
     display: block;
-    margin: auto;
+    margin: auto auto auto 20px;
     font-size: 20px;
     text-decoration: none;
     color: #00234a;
+    font-family: Lato;
+    font-weight: 600;
 }
 
 .three-col-section {
     background: #3893C7;
-    height: 1030px;
+    height: 1100px;
     margin-top: -40px;
 }
 
 .three-col {
-    width: 70%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -209,12 +222,22 @@ width: 381px;
     padding-top: 66px;
     color: white;
     padding-bottom: 10px;
+
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* this font has to be purchased 
+    font-family: "Centrale Sans Medium"; 
+    */
 }
 
 .column {
     width: 294px;
     height: 379px;
     border: 1px solid white;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
 .col-number {
@@ -223,19 +246,32 @@ width: 381px;
     text-align:center;
     margin: 28px;
     color: white;
+    font-family: Montserrat;
+    font-weight: 700;
 }
 .col-text {
     font-size: 16px;
     line-height: 27px;
     color: white;
-    padding: 0px 15px 0px 15px;
+    padding: 0px 27.5px 0px 27.5px;
 }
 .col-bottom-text {
     padding-top: 32px;
     font-size: 16px;
     line-height: 27px;
     color: white;
+    font-weight: 600;
+    font-style: italic;
 }
+
+
+.column:first-child{
+    margin-left: auto;
+}
+.column:last-child {
+    margin-right: auto;
+}
+
 .footer-image-div{
     margin-top: -200px;
     width: 100%;
@@ -249,6 +285,7 @@ width: 381px;
 footer {
    height: 125px;
    background: white;
+    padding-bottom: 40px;
 }
 
 .footer-left,.footer-right {
@@ -256,6 +293,9 @@ footer {
     margin-bottom: auto;
     display:block;
     padding: 25px;
+}
+.footer-right {
+    margin-left: auto;
 }
 
 .footer-text { 
@@ -271,11 +311,17 @@ footer {
     color: #878786;
 }
 
+.footer-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 .privacy {
     background: white;
+    min-height: 500px;
     height: auto;
-    padding-bottom: 200px;
+    padding-bottom: 400px;
 }
 
 .privacy-content {
@@ -291,6 +337,9 @@ footer {
 }
 .privacy-text {
     font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #00234A;
 }
 
 .covid-banner {
@@ -313,7 +362,7 @@ footer {
 
 /* Responsivess */
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
 
     .flex-container {
         flex-direction: column;
@@ -329,7 +378,9 @@ footer {
     }
 
     .pdf-section {
-        height: 1550px !important;
+        min-height: 1600px;
+        height: auto;
+        padding-bottom: 100px;
     }
 
     .Logo_brombacherHeaderLogo {
@@ -339,13 +390,16 @@ footer {
     }
 
     .three-col-section {
-        height: 2400px !important;
+        min-height: 2400px;
+        padding-bottom: 200px;
+        height: auto;
     }
 
     .column {
         margin: auto auto 50px auto;
-        height: 500px;
+        min-height: 500px;
         width: 400px;
+        height: auto;
     } 
 
     .button { 
@@ -353,9 +407,48 @@ footer {
     }
 
     .pdf-text, .col-bottom-text, .col-text, .fifty-text {
-        font-size: 25px;
-        line-height: 30px;
+        font-size: 20px;
+        line-height: 25px;
     }
 
+    .banner-text {
+        font-size: 18px;
+    }
 
 }
+
+@media (min-width: 1500px) {
+
+        .col-bottom-text {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-image-div {
+            margin-top: -380px;
+        }
+        
+}
+
+@media (max-width: 3000px) and (min-width: 2200px) {
+    #blue-banner {
+        margin-left: -205px !important;
+        margin-bottom: -19px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding-bottom: 75px !important;
+     }
+
+     .pdf-text, .col-bottom-text, .col-text, .fifty-text {
+        font-size: 30px !important;
+        line-height: 35px !important;
+    }
+    .pdf-section {
+        height: 1850px !important;
+    }
+}
+
