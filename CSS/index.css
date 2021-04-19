@@ -18,10 +18,10 @@ body {
 
 }
 
-@media (max-width: 768px) {
-    .flex-container {
-        flex-direction: column;
-    }
+.pdf-button-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .Logo_brombacherHeaderLogo {
@@ -80,6 +80,7 @@ height: 64px;
     background: white;
     height: 568px;
 }
+
 .fifty-block {
     width: 95%;
     margin-left: auto;
@@ -96,20 +97,38 @@ h2 {
     font-weight: 900;
 }
 
-p {
+.fifty-text {
     font-size: 18px;
     line-height: 30px;
     color: #002449;
 }
 
 .fifty-right {
+    content: "";
+    background-image: url("../Img/MacBookPro-white.png");
+    background-repeat: no-repeat;
     flex-basis: 50%;
     margin-right: auto;
+    margin-left: auto;
+    display: block;
+    height: 500px;
+    width: 800px;
+    margin-top: 80px;
 }
 
 #laptop-image {
-padding-top: 50px;
-width: 100%;
+padding-top: 30px;
+height: 320px;
+
+margin-left: 150px;
+width: 381px; 
+
+}
+
+#blue-banner {
+    margin-left: 328px;
+    margin-top: -320px;
+    padding-bottom: 7.5px;
 }
 
 .pdf-section {
@@ -128,10 +147,10 @@ width: 100%;
 }
 
 #covers-image {
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
     display: block;
 }
+
 
 .pdf-right {
     flex-basis: 50%;
@@ -289,4 +308,54 @@ footer {
 }
 #banner-link {
     color: #2db44a;
+}
+
+
+/* Responsivess */
+
+@media (max-width: 1200px) {
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .fifty-section {
+        height: 1000px;
+    }
+
+    .fifty-right {
+      flex-basis: unset;
+      padding-top: 0px;
+    }
+
+    .pdf-section {
+        height: 1550px !important;
+    }
+
+    .Logo_brombacherHeaderLogo {
+        padding-right: 0;
+        padding-top: 0;
+        margin-top: -80px;
+    }
+
+    .three-col-section {
+        height: 2400px !important;
+    }
+
+    .column {
+        margin: auto auto 50px auto;
+        height: 500px;
+        width: 400px;
+    } 
+
+    .button { 
+        font-size: 25px;
+    }
+
+    .pdf-text, .col-bottom-text, .col-text, .fifty-text {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+
 }
