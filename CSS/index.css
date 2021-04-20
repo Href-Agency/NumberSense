@@ -1,7 +1,23 @@
+
+  @font-face {
+    font-family: 'Centrale Sans Medium';
+    src: url('./Centrale/Centrale Sans Medium/CentraleSans-Medium.otf');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Centrale Sans Bold';
+    src: url('./Centrale/Centrale Sans Bold/CentraleSans-Bold.otf');
+    font-weight: 600;
+  }
+
+
+
+
 body {
     padding: 0;
     margin: 0;
-    font-family: Lato;
+    font-family: 'Lato';
+    font-weight: 400;
 }
 
 .header-block {
@@ -82,6 +98,18 @@ height: 64px;
     height: 568px;
 }
 
+.fifty-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.fifty-title {
+    max-width: 700px;
+    font-family: 'Centrale Sans Medium';
+}
+
 .fifty-block {
     width: 95%;
     margin-left: 50px;
@@ -107,7 +135,7 @@ h2 {
     line-height: 30px;
     color: #002449;
     font-weight: 600;
-    width: 80%;
+    width: 90%;
 }
 
 .fifty-right {
@@ -120,7 +148,7 @@ h2 {
     display: block;
     height: 500px;
     width: 800px;
-    margin-top: 50px;
+    margin-top: -100px;
 }
 
 #laptop-image {
@@ -173,10 +201,15 @@ width: 381px;
     line-height: 40px;
     font-weight: 600;
     padding-bottom: 18px;
+    margin-top: 0px;
+    font-family: 'Centrale Sans Medium';
 }
 
 .pdf-text {
     color: white;
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 10px;
 
 }
 
@@ -189,7 +222,7 @@ width: 381px;
     font-size: 20px;
     line-height: 40px;
     color: #00234a;
-    margin-top: 30px;
+    margin-top: 20px;
 
 }
 
@@ -205,7 +238,7 @@ width: 381px;
 
 .three-col-section {
     background: #3893C7;
-    height: 1100px;
+    height: 1000px;
     margin-top: -40px;
 }
 
@@ -226,10 +259,7 @@ width: 381px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    
-    /* this font has to be purchased 
     font-family: "Centrale Sans Medium"; 
-    */
 }
 
 .column {
@@ -319,9 +349,9 @@ footer {
 
 .privacy {
     background: white;
-    min-height: 500px;
+    min-height: 1600px;
     height: auto;
-    padding-bottom: 400px;
+    padding-bottom: 200px;
 }
 
 .privacy-content {
@@ -334,6 +364,11 @@ footer {
 .privacy-title {
     font-size: 53px;
     line-height: 55px;
+    font-family: 'Centrale Sans Medium'
+}
+
+.privacy-title-container {
+    flex-basis: 100%;
 }
 .privacy-text {
     font-size: 16px;
@@ -362,10 +397,10 @@ footer {
 
 /* Responsivess */
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
 
-    .flex-container {
-        flex-direction: column;
+    .fifty-flex-container {
+        flex-direction: column-reverse;
     }
 
     .fifty-section {
@@ -375,10 +410,14 @@ footer {
     .fifty-right {
       flex-basis: unset;
       padding-top: 0px;
+      margin-top: 0;
+    }
+    .fifty-text {
+        margin-top: -50px;
     }
 
     .pdf-section {
-        min-height: 1600px;
+        min-height: 1300px;
         height: auto;
         padding-bottom: 100px;
     }
@@ -386,11 +425,11 @@ footer {
     .Logo_brombacherHeaderLogo {
         padding-right: 0;
         padding-top: 0;
-        margin-top: -80px;
+        margin-top: 30px;
     }
 
     .three-col-section {
-        min-height: 2400px;
+        min-height: 2000px;
         padding-bottom: 200px;
         height: auto;
     }
@@ -407,12 +446,16 @@ footer {
     }
 
     .pdf-text, .col-bottom-text, .col-text, .fifty-text {
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 28px;
+        line-height: 32px;
     }
 
     .banner-text {
         font-size: 18px;
+    }
+
+    .pdf-right,.pdf-left {
+        flex-basis: 100%;
     }
 
 }
@@ -431,11 +474,62 @@ footer {
         
 }
 
-@media (max-width: 3000px) and (min-width: 2200px) {
+@media (max-width: 3000px) and (min-width: 2500px) {
     #blue-banner {
         margin-left: -205px !important;
         margin-bottom: -19px !important;
     }
+
+    .three-col-section {
+        flex-basis: 30% !important;
+    }
+    .pdf-right { 
+        flex-basis: 30%;
+    }
+
+    #covers-image {
+    margin-left: auto;
+    margin-right: 100px;
+    }
+
+    .fifty-right {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .fifty-left {
+        margin-left: auto;
+        margin-right: 0;
+        flex-basis: 30% !important;
+    }
+
+    .fifty-title {
+        margin-right: auto;
+    margin-left: 482px !important;
+    }
+}
+
+@media(min-width: 1919px) {
+   .three-col-section {
+       padding-bottom: 150px;
+
+   }
+   .fifty-left {
+       flex-basis: 40%;
+       margin-left: auto;
+   }
+   .fifty-right {
+       margin-left: 0;
+       margin-right: 0;
+   }
+
+   .fifty-title {
+       margin-left: 180px;
+   }
+
+   .pdf-right {
+       flex-basis: 40%;
+   }
 }
 
 @media (max-width: 768px) {
@@ -443,12 +537,13 @@ footer {
         padding-bottom: 75px !important;
      }
 
-     .pdf-text, .col-bottom-text, .col-text, .fifty-text {
-        font-size: 30px !important;
-        line-height: 35px !important;
-    }
     .pdf-section {
         height: 1850px !important;
+    }
+    .privacy {
+        min-height: 1500px;
+        height: auto;
+        padding-bottom: 200px;
     }
 }
 
