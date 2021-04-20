@@ -37,7 +37,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: -2px;
+
 }
 
 .Logo_brombacherHeaderLogo {
@@ -73,7 +73,7 @@ height: 64px;
     background-color: #9ACA60;
     border: none;
     color: white;
-    padding: 20px;
+    padding: 21px 33px 20px 34px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -81,13 +81,12 @@ height: 64px;
     line-height: 23px;
     color: #00234A;
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 600;
+    font-family: 'centrale sans bold';
 } 
 
 .button:hover {
-        height: 64px;
-        opacity: 0.33;
-        background-color: #FFFFFF;
+        background-color:rgba(255,255,255,0.33);
         color: #00234A;
 }
 
@@ -123,10 +122,10 @@ height: 64px;
 }
 
 h2 {
-    font-size: 53px;
+    font-size: 50px;
     line-height: 55px;
     color: #002449;
-    font-weight: 900;
+    font-weight: 500;
     margin-top: 0;
 }
 
@@ -134,7 +133,7 @@ h2 {
     font-size: 18px;
     line-height: 30px;
     color: #002449;
-    font-weight: 600;
+    font-weight: 400;
     width: 90%;
 }
 
@@ -148,7 +147,7 @@ h2 {
     display: block;
     height: 500px;
     width: 800px;
-    margin-top: -100px;
+    margin-top: -110px;
 }
 
 #laptop-image {
@@ -178,7 +177,7 @@ width: 381px;
 }
 
 .pdf-left {
-    flex-basis: 50%;
+    flex-basis: 47%;
 }
 
 #covers-image {
@@ -192,6 +191,8 @@ width: 381px;
 .pdf-right {
     flex-basis: 50%;
     margin-top: 43px;
+    margin-left: -20px;
+    padding-right: 11px;
 
 }
 
@@ -199,7 +200,7 @@ width: 381px;
     color: white;
     font-size: 30px;
     line-height: 40px;
-    font-weight: 600;
+    font-weight: 500;
     padding-bottom: 18px;
     margin-top: 0px;
     font-family: 'Centrale Sans Medium';
@@ -207,9 +208,10 @@ width: 381px;
 
 .pdf-text {
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 27px;
     padding-bottom: 10px;
+    font-weight: 400;
 
 }
 
@@ -222,7 +224,8 @@ width: 381px;
     font-size: 20px;
     line-height: 40px;
     color: #00234a;
-    margin-top: 20px;
+    margin-top: 32px;
+    border: none;
 
 }
 
@@ -254,12 +257,12 @@ width: 381px;
     text-align: center;
     padding-top: 66px;
     color: white;
-    padding-bottom: 10px;
-
+    padding-bottom: 14px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     font-family: "Centrale Sans Medium"; 
+    font-weight: 500;
 }
 
 .column {
@@ -284,9 +287,10 @@ width: 381px;
     line-height: 27px;
     color: white;
     padding: 0px 27.5px 0px 27.5px;
+    font-weight: 500;
 }
 .col-bottom-text {
-    padding-top: 32px;
+    padding-top: 35px;
     font-size: 16px;
     line-height: 27px;
     color: white;
@@ -315,7 +319,7 @@ width: 381px;
 footer {
    height: 125px;
    background: white;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .footer-left,.footer-right {
@@ -332,10 +336,11 @@ footer {
     font-size: 14px;
     line-height: 25px;
     color: #878786;
+    font-weight: 400;
 }
 
 #footer-link {
-    padding-left: 25px;
+    padding-left: 20px;
     font-size: 14px;
     line-height: 25px;
     color: #878786;
@@ -358,7 +363,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    padding-top: 30px;
+    padding-top: 60px;
 }
 
 .privacy-title {
@@ -423,7 +428,7 @@ footer {
     }
 
     .Logo_brombacherHeaderLogo {
-        padding-right: 0;
+        padding-right: 56px;
         padding-top: 0;
         margin-top: 30px;
     }
@@ -456,6 +461,7 @@ footer {
 
     .pdf-right,.pdf-left {
         flex-basis: 100%;
+        margin-left: 20px;
     }
 
 }
