@@ -118,7 +118,7 @@ height: 64px;
 }
 
 .fifty-left {
-    flex-basis: 50%;
+    flex-basis: 45%;
 }
 
 h2 {
@@ -141,7 +141,7 @@ h2 {
     content: "";
     background-image: url("../Img/MacBookPro-white.png");
     background-repeat: no-repeat;
-    flex-basis: 50%;
+    flex-basis: 55%;
     margin-right: auto;
     margin-left: auto;
     display: block;
@@ -185,14 +185,14 @@ width: 381px;
     display: block;
     height: 752px;
     width: 629px;
+    margin-left: 40px;
 }
 
 
 .pdf-right {
-    flex-basis: 50%;
+    flex-basis: 45%;
     margin-top: 43px;
-    margin-left: -20px;
-    padding-right: 11px;
+    padding-right: 31px;
 
 }
 
@@ -317,9 +317,9 @@ width: 381px;
 
 }
 footer {
-   height: 125px;
-   background: white;
-    padding-bottom: 20px;
+    height: 125px;
+    background: white;
+    margin-bottom: 20px;
 }
 
 .footer-left,.footer-right {
@@ -402,6 +402,32 @@ footer {
 
 /* Responsivess */
 
+@media (max-width: 768px) {
+    footer {
+        padding-bottom: 75px !important;
+     }
+
+    .pdf-section {
+        height: 1850px !important;
+    }
+    .privacy {
+        min-height: 1500px;
+        height: auto;
+        padding-bottom: 200px;
+    }
+    .column {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1300px) and (min-width: 1200px) {
+    .column {
+        width: 300px !important;
+    }
+ 
+}
+
+
 @media (max-width: 1300px) {
 
     .fifty-flex-container {
@@ -409,7 +435,7 @@ footer {
     }
 
     .fifty-section {
-        height: 1000px;
+        height: 750px;
     }
 
     .fifty-right {
@@ -434,7 +460,6 @@ footer {
     }
 
     .three-col-section {
-        min-height: 2000px;
         padding-bottom: 200px;
         height: auto;
     }
@@ -442,8 +467,8 @@ footer {
     .column {
         margin: auto auto 50px auto;
         min-height: 500px;
-        width: 400px;
         height: auto;
+        width: 400px;
     } 
 
     .button { 
@@ -451,8 +476,8 @@ footer {
     }
 
     .pdf-text, .col-bottom-text, .col-text, .fifty-text {
-        font-size: 28px;
-        line-height: 32px;
+        font-size: 20px;
+        line-height: 22px;
     }
 
     .banner-text {
@@ -462,6 +487,9 @@ footer {
     .pdf-right,.pdf-left {
         flex-basis: 100%;
         margin-left: 20px;
+    }
+    .fifty-title {
+        max-width: 900px;
     }
 
 }
@@ -480,41 +508,6 @@ footer {
         
 }
 
-@media (max-width: 3000px) and (min-width: 2500px) {
-    #blue-banner {
-        margin-left: -205px !important;
-        margin-bottom: -19px !important;
-    }
-
-    .three-col-section {
-        flex-basis: 30% !important;
-    }
-    .pdf-right { 
-        flex-basis: 30%;
-    }
-
-    #covers-image {
-    margin-left: auto;
-    margin-right: 100px;
-    }
-
-    .fifty-right {
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    .fifty-left {
-        margin-left: auto;
-        margin-right: 0;
-        flex-basis: 30% !important;
-    }
-
-    .fifty-title {
-        margin-right: auto;
-    margin-left: 482px !important;
-    }
-}
-
 @media(min-width: 1919px) {
    .three-col-section {
        padding-bottom: 150px;
@@ -530,26 +523,48 @@ footer {
    }
 
    .fifty-title {
-       margin-left: 180px;
+       margin-left: 140px;
    }
 
    .pdf-right {
        flex-basis: 40%;
    }
+
+   .pdf-left {
+       margin-left: 180px;
+
+   }
 }
 
-@media (max-width: 768px) {
-    footer {
-        padding-bottom: 75px !important;
-     }
-
-    .pdf-section {
-        height: 1850px !important;
+@media (max-width: 3000px) and (min-width: 2500px) {
+    #blue-banner {
+        margin-left: -205px !important;
+        margin-bottom: -19px !important;
     }
-    .privacy {
-        min-height: 1500px;
-        height: auto;
-        padding-bottom: 200px;
+
+    .three-col-section {
+        flex-basis: 30% !important;
+    }
+    .pdf-right { 
+        flex-basis: 25%;
+        margin-left: -125px;
+    }
+
+    #covers-image {
+    margin-left: auto;
+    margin-right: 125px;
+    }
+
+
+    .fifty-left {
+        margin-left: auto;
+        margin-right: 0;
+        flex-basis: 25% !important;
+    }
+
+    .fifty-title {
+        margin-right: auto;
+        margin-left: 555px !important;
     }
 }
 
