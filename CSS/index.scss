@@ -112,7 +112,7 @@ body.homepage {
   font-weight: 600;
   font-family: "centrale sans bold";
 }
-.button:hover {
+.button:hover,.button:active {
   background-color: rgba(255, 255, 255, 0.33);
   color: #00234a;
 }
@@ -470,7 +470,6 @@ footer {
 .privacy-highlighted {
   text-decoration: underline;
   font-weight: bold;
-  background-color: yellow;
   display: inline;
 }
 
